@@ -11,8 +11,9 @@
             }
 
             table{
-                width: 400px; 
-                border-collapse: collapse;
+                width: 400px; /*Largura da celula*/
+                height: 400px;/*Altura da celula*/
+                border-collapse: collapse; /*deixa as celulas da tabela unida*/
 
             }
 
@@ -23,6 +24,8 @@
             td{
                 border: 1px solid black;
                 padding: 8px;
+                text-align: center; /*deixa o testo da celula alinhado horizontalmente*/
+                vertical-align: top; /*deixa o testo da celula alinhado vertical*/
             }
         </style>
 
@@ -30,8 +33,8 @@
 <body>
     <h1>Minha primeira Tabela</h1>
     <table>
-        <tr>
-            <td>a1</td>
+        <tr> <!-- linha --> 
+            <td>a1</td> <!-- celula que forma coluna-->
             <td>b1</td>
             <td>c1</td>
         </tr>
