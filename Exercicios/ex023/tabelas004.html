@@ -9,13 +9,15 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        th{
+        th, td{
             border: 1px solid black;
+            text-align: center;
         }
 
         table{
-            width: 200px;
+            width: 500px;
             height: 300px;
+            border-collapse: collapse;
         }
 
 
@@ -23,50 +25,51 @@
 </head>
 <body>
     <table>
+        <caption>Filmes Favoritos</caption>
         <thead></thead>
         <tbody>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
             <tr>
-                <th rowspan="3">Mulheres</th>
-                <th>Ana Maria Santos</th>
-                <th>Allien</th>
-                <th>Rambo</th>
-                <th>Vingadores</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Allien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
             </tr>
             <tr>
-                <th>Beatriz Souza</th>
-                <th>Hunk</th>
-                <th>Inception</th>
-                <th>Batman</th>
+                <td>Beatriz Souza</td>
+                <td>Hunk</td>
+                <td>Inception</td>
+                <td>Batman</td>
             </tr>
             <tr>
-                <th>Claudia Melo</th>
-                <th>Oblivion</th>
-                <th>Matrix</th>
-                <th>Big Hero</th>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homesns</th>
-                <th>Bruno Mendonça</th>
-                <th>Intocaveis</th>
-                <th>Amnesia</th>
-                <th>Gladiador</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
             </tr>
             <tr>
-                <th>Daniel Lourenço</th>
-                <th>Wall-E</th>
-                <th>Oldboy</th>
-                <th>Dangal</th>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
             </tr>
             <tr>
-                <th>Fabiano Mota</th>
-                <th>Star Wars 5</th>
-                <th>Taxi Driver</th>
-                <th>Toy Story</th>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
             </tr>
 
 
