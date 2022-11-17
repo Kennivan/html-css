@@ -12,6 +12,7 @@
 
         table{
             width: 500px;
+            position: relative;
         }
 
         td , th{
@@ -19,9 +20,20 @@
             padding: 10px;
         }
 
+        thead > tr > th {
+            position: sticky; /*Deixa fixo cabeçalho*/
+            top: -1px;
+            background-color: gray; /*mesma cor de thead*/
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n) { /*2n = de duas em duas coloca uma tarja com a cor desejada. Pode utilizar odd = impar ou even = par */
+            background-color: lightgray;
+
         }
 
     </style>
